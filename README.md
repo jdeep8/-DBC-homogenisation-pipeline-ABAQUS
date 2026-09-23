@@ -5,6 +5,8 @@
 ## Getting started
 
 An automated Python toolset for Abaqus to compute the effective (homogenized) mechanical properties of Representative Volume Elements (RVEs) of porous or architectured lattices.
+<img width="1435" height="660" alt="image" src="https://github.com/user-attachments/assets/e5b1a80a-e87b-43d4-bf5d-86662fa395a2" />
+
 
 
 
@@ -55,6 +57,7 @@ The Boundary Conditions Applicator maps kinematic equations, symmetric constrain
 * **Symmetry Constraints:** Automatically applies `XSYMM`, `YSYMM`, and `ZSYMM` boundary conditions to the minimum and maximum faces during the initialization step.
 * **Kinematic Coupling:** Hooks up the maximum faces (`XMAX`, `YMAX`, `ZMAX`) directly to their respective Reference point.
 * **Job Assembly:** Requests targeted History Outputs (`RF`, `U`) directly from the Reference Points and sets up the ready-to-run Abaqus simulation analysis Job.
+<img width="1522" height="750" alt="image" src="https://github.com/user-attachments/assets/c49a93a6-dcf7-4bfb-b259-f9483763105e" />
 
 ### Configuration & Execution
 
@@ -64,6 +67,7 @@ Open `src/bc_applicator.py` and tweak the execution configurations inside **Sect
 ## Module 3: Post-Processor (`post_processor.py`)
 
 The Post-Processor automates data extraction and analytical homogenization once the simulation is complete. It queries the active Output Database (`.odb`) to calculate the macro-scale effective mechanical properties of the RVE.
+<img width="1341" height="717" alt="image" src="https://github.com/user-attachments/assets/2aec2110-7833-4d6b-a363-5bd36de57608" />
 
 ### What it does:
 * **Active ODB Detection:** Automatically detects and connects to the active `.odb` file currently open in your Abaqus viewport.
