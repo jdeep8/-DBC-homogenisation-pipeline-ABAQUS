@@ -5,6 +5,7 @@
 ## Getting started
 
 An automated Python toolset for Abaqus to compute the effective (homogenized) mechanical properties of Representative Volume Elements (RVEs) of porous or architectured lattices.
+
 <img width="1435" height="660" alt="image" src="https://github.com/user-attachments/assets/e5b1a80a-e87b-43d4-bf5d-86662fa395a2" />
 
 
